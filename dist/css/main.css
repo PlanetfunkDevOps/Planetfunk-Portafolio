@@ -173,6 +173,7 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+/* About page */
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -181,11 +182,11 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-    .about-info .bio .bio-image {
-      grid-area: bioimage;
-      margin: auto;
-      border-radius: 50%;
-      border: #eece1a 3px solid; }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #eece1a 3px solid; }
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
@@ -209,6 +210,26 @@ main {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+
+/* Contact Page */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #eece1a;
+      color: #fff; }
+      .boxes div:hover span {
+        color: #fff; }
 
 /* Button Styles */
 .btn, .btn-dark, .btn-light {
